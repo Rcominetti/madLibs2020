@@ -5,22 +5,22 @@
   <title>start</title>
   <style media="screen">
     * {
-      border: 1px solid red;
+      //border: 1px solid red;
     }
 
     body {
-      background-color: rgb(206, 142, 86);
+      background-color: rgb(249, 197, 189);
       display: flex;
       align-items: center;
       flex-direction: column;
       justify-content: center;
-      color: rgb(33, 50, 111);
+      color: rgb(0, 0, 0);
       font-family: sans-serif;
     }
 
     div {
       padding: 2em;
-      background-color: rgb(65, 140, 237);
+      background-color: rgb(128, 118, 163);
       width: 60%;
       /* margin-bottom: 1em; */
     }
@@ -28,11 +28,11 @@
     p {
       padding: 1em;
       font-size: 2em;
-      background-color: rgb(57, 218, 152);
+      background-color: rgb(124, 103, 127);
     }
 
     button {
-      background-color: rgb(169, 26, 181);
+      background-color: rgb(155, 196, 0);
       color: inherit;
       width: 30%;
       font-size: 1.5em;
@@ -62,21 +62,21 @@
 <body>
   <div id="inputPanel">
     <h3>A few questions for you</h3>
-    <p>A first name:
-      <input id="firstName" type="text" placeholder="first name">
+    <p>A name:
+      <input id="firstName" type="text" placeholder="name">
     </p>
-    <p>Your favorite color:
-      <input id="favColor" type="text" placeholder="favorite color">
+    <p>A noun:
+      <input id="favColor" type="text" placeholder="person, place or thing">
     </p>
-    <p>Somewhere to visit:
-      <input id="place" type="text" placeholder="place">
+    <p>An event:
+      <input id="place" type="text" placeholder="event">
     </p>
     <button id="submit">Submit your answers</button>
     <p id="warning">Please answer all questions.</p>
 
   </div>
   <div id="outputPanel">
-    <p>Your story....</p>
+    <p>And so....</p>
     <p id="theStory"></p>
     <p id="theStory2"></p>
     <p id="theStory3"></p>
@@ -144,10 +144,10 @@
       let finishedStory2 = ""
       let finishedStory3 = ""
 
-      finishedStory1 += "Welcome, " + firstName.value + ". "
-      finishedStory1 += "I bet you are a nice person, " + firstName.value + ". "
-      finishedStory2 += "Why do you like the color " + favColor.value + "? "
-      finishedStory3 += "I hear " + place.value + " is a nice spot to visit."
+      finishedStory1 += "This ends the story of " + firstName.value + ". "
+      //finishedStory1 += "I bet you are a nice person, " + firstName.value + ". "
+      finishedStory2 += "They foolishly believed they could beat " + favColor.value + " in a duel. "
+      finishedStory3 += "Now their spirit awaits judgement in " + place.value + ", their perceived afterlife."
       theStory.textContent = finishedStory1
       theStory2.textContent = finishedStory2
       theStory3.textContent = finishedStory3
